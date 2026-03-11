@@ -11,18 +11,18 @@ function Pagina() {
   }
 
   return (
-    <main className="min-h-screen p-4 md:p-12 max-w-6xl mx-auto">
+    <main className="min-h-screen p-4 md:p-12 max-w-9xl mx-auto bg-white text-black dark:bg-[#181719] dark:text-white transition-colors duration-300">
       <div className="flex justify-end mb-8">
         <button 
           onClick={toggleTema}
-          className="px-4 py-2 border rounded-md font-bold text-xs uppercase cursor-pointer"
+          className="px-4 py-2 border border-black dark:border-white rounded-md font-bold text-xs uppercase"
         >
           {oscuro ? '☀️ Claro' : '🌙 Oscuro'}
         </button>
       </div>
 
       <header className="flex flex-col md:flex-row justify-between mb-24 gap-8">
-        <h1 className="text-4xl md:text-5xl font-bold w-full md:w-1/3">
+        <h1 className="text-4xl md:text-5xl font-bold w-full md:w-1/3 font-serif">
           The creative crew
         </h1>
         <div className="w-full md:w-1/3">
@@ -41,7 +41,6 @@ function Pagina() {
             className={`
               ${indice % 2 === 1 ? "mt-16 md:mt-0" : ""} 
               ${(indice === 1 || indice === 4) ? "md:mt-32" : ""}
-              ${(indice === 2 || indice === 5) ? "md:mt-0" : ""}
             `}
           >
             <Card 
@@ -53,7 +52,7 @@ function Pagina() {
         ))}
       </section>
 
-      <footer className="mt-32 pb-8 text-center text-gray-500 text-sm font-semibold">
+      <footer className="mt-32 pb-8 text-center text-gray-500 dark:text-gray-400 text-sm font-semibold">
         creado por Jair 
       </footer>
     </main>
