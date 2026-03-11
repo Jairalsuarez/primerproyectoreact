@@ -2,7 +2,7 @@ const integrantesEquipo = [
   {
     nombre: 'Bill Mahoney',
     cargo: 'PRODUCT OWNER',
-    foto: './src/assets/photo1.png' // Asegúrate de que los nombres de archivo coincidan
+    foto: './public/photo1.png' 
   },
   {
     nombre: 'Saba Cabrera',
