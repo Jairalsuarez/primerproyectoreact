@@ -11,37 +11,38 @@ function Pagina() {
   }
 
   return (
-    <main className="min-h-screen p-6 md:p-12 max-w-6xl mx-auto">
-      
+    <main className="min-h-screen p-4 md:p-12 max-w-6xl mx-auto">
       <div className="flex justify-end mb-8">
         <button 
           onClick={toggleTema}
-          className="px-4 py-2 border rounded-lg font-bold text-sm uppercase tracking-tighter cursor-pointer"
+          className="px-4 py-2 border rounded-md font-bold text-xs uppercase cursor-pointer"
         >
           {oscuro ? '☀️ Claro' : '🌙 Oscuro'}
         </button>
       </div>
 
-      {/* Encabezado */}
-      <header className="flex flex-col md:flex-row justify-between mb-16 md:mb-24 gap-8">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+      <header className="flex flex-col md:flex-row justify-between mb-24 gap-8">
+        <h1 className="text-4xl md:text-5xl font-bold w-full md:w-1/3">
           The creative crew
         </h1>
-        <div className="md:w-1/3">
+        <div className="w-full md:w-1/3">
           <h2 className="uppercase font-bold text-sm mb-4">Who we are</h2>
-          <p className="text-lg md:text-xl leading-relaxed">
+          <p className="text-lg leading-relaxed">
             We are team of creatively diverse, driven, innovative individuals 
             working in various locations from the world.
           </p>
         </div>
       </header>
 
-      
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-x-16 gap-y-12 md:gap-y-32">
+      <section className="grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-16 gap-y-16 md:gap-y-32">
         {integrantesEquipo.map((miembro, indice) => (
           <div 
             key={miembro.nombre}
-            className={indice === 1 || indice === 4 ? "md:mt-32" : ""}
+            className={`
+              ${indice % 2 === 1 ? "mt-16 md:mt-0" : ""} 
+              ${(indice === 1 || indice === 4) ? "md:mt-32" : ""}
+              ${(indice === 2 || indice === 5) ? "md:mt-0" : ""}
+            `}
           >
             <Card 
               nombre={miembro.nombre} 
@@ -52,7 +53,7 @@ function Pagina() {
         ))}
       </section>
 
-      <footer className="mt-24 pb-8 text-center text-gray-500 text-sm font-medium">
+      <footer className="mt-32 pb-8 text-center text-gray-500 text-sm font-semibold">
         creado por Jair 
       </footer>
     </main>
