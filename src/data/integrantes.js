@@ -7,27 +7,27 @@ const integrantesEquipo = [
   {
     nombre: 'Saba Cabrera',
     cargo: 'ART DIRECTOR',
-    foto: './src/assets/photo2.png'
+    foto: './public/photo2.png'
   },
   {
     nombre: 'Shae Le',
     cargo: 'TECH LEAD',
-    foto: './src/assets/photo3.png'
+    foto: './public/photo3.png'
   },
   {
     nombre: 'Skylah Lu',
     cargo: 'UX DESIGNER',
-    foto: './src/assets/photo4.png'
+    foto: './public/photo4.png'
   },
   {
     nombre: 'Griff Richards',
     cargo: 'DEVELOPER',
-    foto: './src/assets/photo5.png'
+    foto: './public/photo5.png'
   },
   {
     nombre: 'Stan John',
     cargo: 'DEVELOPER',
-    foto: './src/assets/photo6.png'
+    foto: './public/photo6.png'
   }
 ];
 
