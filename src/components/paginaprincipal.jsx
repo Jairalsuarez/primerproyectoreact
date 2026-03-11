@@ -15,9 +15,9 @@ function Pagina() {
       <div className="flex justify-end mb-8">
         <button 
           onClick={toggleTema}
-          className="px-4 py-2 border border-black dark:border-white rounded-md font-bold text-xs uppercase"
+          className="px-4 py-2 border border-black dark:border-white rounded-md font-bold text-xs uppercase cursor-pointer"
         >
-          {oscuro ? '☀️ Claro' : '🌙 Oscuro'}
+          {oscuro ? '☀️' : '🌙'}
         </button>
       </div>
 
@@ -53,7 +53,7 @@ function Pagina() {
       </section>
 
       <footer className="mt-32 pb-8 text-center text-gray-500 dark:text-gray-400 text-sm font-semibold">
-        creado por Jair 
+        creado por Jair - devChallenges.io
       </footer>
     </main>
   )

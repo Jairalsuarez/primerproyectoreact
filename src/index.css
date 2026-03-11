@@ -1,2 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --font-serif: "Playfair Display", serif;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: var(--font-serif);
+}
