@@ -11,7 +11,7 @@ function Pagina (){
                 </h1>
                 <div className="w-full md:w-1/2">
                     <h2 className="uppercase font-bold text-sm mb-2">Who we are</h2>
-                    <p className="text-lg leading-snug">
+                    <p className="text-lg leading-snug max-w-md">
                        We are team of creatively diverse, driven, innovative individuals 
                        working in various locations from the world.
                     </p>
@@ -21,7 +21,7 @@ function Pagina (){
     {integrantesEquipo.map((miembro, indice) => (
         <div 
             key={miembro.nombre}
-            className={indice === 1 || indice === 4 ? "md:mt-24" : ""}
+            className={indice === 1 || indice === 4 ? "translate-y-20 md:translate-y-20" : ""}
         >
             
             <Card 
