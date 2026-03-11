@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.dark {
+  background-color: #181719;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
